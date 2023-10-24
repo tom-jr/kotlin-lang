@@ -43,3 +43,23 @@ fun main() {
 
 ## Map
 coleção de chave e valor com valores unicos
+
+```kotlin
+fun main() {
+val myMap: Map<Int, String> = mapOf(1 to "Mokey D Ruffy", 2 to "Zoro", 3 to "Nami", 4 to "Ussop")
+val myMapM: MutableMap<Int, String> = mutableMapOf(1 to "Mokey D Ruffy", 2 to "Zoro", 3 to "Nami", 4 to "Ussop", 5 to "Sanj", 6 to "Chopper")
+
+println(myMapM)
+println(myMapM[2]) // search by the key, returns key's value
+println(myMapM.count()) // size of key's pair items
+myMapM.put(7 , "Nico Robe")
+println(myMapM) // func adiona novo par
+myMapM.remove(1) // func remove by the key
+println(myMapM)
+println("contains key 2? ${myMapM.containsKey(2)}");
+println(myMapM.values) // returns only values
+println(myMapM.keys) //returns only keys
+println(3 in myMapM.keys)
+println("Nami" in myMapM.values)
+}
+```
